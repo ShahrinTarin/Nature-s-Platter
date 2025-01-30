@@ -15,12 +15,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    
+
     <!-- daisyui cdn  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-         <!-- font awesome cdn  -->
-         <script src="https://kit.fontawesome.com/9156762a94.js" crossorigin="anonymous"></script>
+    <!-- font awesome cdn  -->
+    <script src="https://kit.fontawesome.com/9156762a94.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -42,26 +42,27 @@
 
 <body class="font-sora">
 
-    <header class="md:container mx-auto">
-        <nav>
+    <header class="md:container mx-auto bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+
+        <nav class="mb-10 md:mb-20">
             <div class="navbar pb-6 md:pb-3 border-b border-[#179800] md:border-0 justify-between items-center">
                 <!-- nav right side -->
                 <div class="navbar-start">
-                    <a class="btn btn-ghost text-xl"><img class="w-full" src="./images/logo-header.png" alt=""></a>
+                    <a class="btn-ghost text-xl"><img class="w-full" src="./images/logo-header.png" alt=""></a>
                 </div>
                 <!-- nav middle -->
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li><a>Product</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Contact us</a></li>
+                        <li class="text-black"><a>Product</a></li>
+                        <li class="text-black"><a>Services</a></li>
+                        <li class="text-black"><a>Contact us</a></li>
                     </ul>
                 </div>
                 <!-- nav left side -->
                 <div class="navbar-end hidden lg:flex space-x-3">
-                    <div class="card-actions flex items-center">
-                        <div><i class="fa-solid fa-magnifying-glass"></i></div>
-                        <div><i class="fa-solid fa-cart-shopping"></i></div>
+                    <div class="card-actions flex items-center gap-3">
+                        <div><i class="fa-solid fa-magnifying-glass text-xl cursor-pointer"></i></div>
+                        <div><i class="fa-solid fa-cart-shopping text-xl cursor-pointer"></i></div>
                         <button
                             class="btn btn-outline font-bold border-btn-primary py-1 px-9 text-[#000] hover:text-white hover:border-none hover:bg-bike-primary">Login</button>
                     </div>
@@ -70,22 +71,22 @@
                 <!-- dropdown -->
                 <div class="dropdown dropdown-end text-justify">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#179800]"  viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#179800]" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
                     <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Product</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Contact us</a></li>
+                        class="menu menu-sm dropdown-content space-y-2 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li class="text-black"><a>Product</a></li>
+                        <li class="text-black"><a>Services</a></li>
+                        <li class="text-black"><a>Contact us</a></li>
                         <div class="navbar-end space-x-3 space-y-2">
                             <div class="card-actions">
 
                                 <button
-                            class="btn btn-outline font-bold border-btn-primary ml-3 py-1 px-9 text-[#000] hover:text-white hover:border-none hover:bg-bike-primary">Login</button>
+                                    class="btn btn-outline font-bold border-btn-primary ml-3 py-1 px-9 text-[#000] hover:text-white hover:border-none hover:bg-bike-primary">Login</button>
                             </div>
                             <div> <a class="btn bg-btn-primary px-7 py-3 text-white hover:text-black">Register</a></div>
                         </div>
@@ -93,9 +94,74 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Hero section  -->
+        <section class="mb-10 md:mb-20">
+            <div class="text-center">
+                <div class="mb-4 md:mb-7">
+                    <h1 class="font-semibold text-5xl mb-8 text-black">Freshness <span class="text-[#179800]">You Can
+                            <br> Count</span> On, Prices You’ll Love!
+                    </h1>
+                    <p class="text-base text-[#5D5360]">Shop your daily essentials at unbeatable prices. From fresh
+                        produce to pantry <br> staples, we’ve
+                        got you covered every day!</p>
+                </div>
+                <div><img class="md:w-3/5 w-full mx-auto" src="./images/hero-vegetables.png" alt=""></div>
+            </div>
+        </section>
+
     </header>
 
     <main class="md:container mx-auto">
+
+        <!-- service section  -->
+        <section class="mb-10 md:mb-20 max-w-[1320px] mx-auto">
+            <h1 class="text-[#179800] text-3xl font-semibold mb-10">Services</h1>
+
+            <!-- card container  -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 place-items-center md:place-items-stretch gap-5 lg:gap-2">
+                <!-- card1  -->
+                <div class="card bg-[#EFEBE3] max-w-[420px]">
+                    <div class="pt-10">
+                        <figure class="px-10 h-[150px] w-[150px] bg-white rounded-full mx-auto">
+                            <img src="./images/service.png" alt="service" />
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-semibold text-2xl mb-2 text-black">24/7 Services </h2>
+                        <p class="text-[#111111] font-light mb-3">Enjoy round-the-clock convenience with our 24/7 service, delivering tasty meals anytime you crave them, day or night!</p>
+                    </div>
+                </div>
+
+                <!-- card2  -->
+                <div class="card bg-[#EFEBE3] max-w-[420px]">
+                    <div class="pt-10">
+                        <figure class="px-10 h-[150px] w-[150px] bg-white rounded-full mx-auto">
+                            <img src="./images/delivery.png" alt="Fast Delivery" />
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-semibold text-2xl mb-2 text-black">Fast Delivery </h2>
+                        <p class="text-[#111111] font-light mb-3">Experience lightning-fast delivery with our restaurant's efficient service, bringing delicious meals straight to your door in record time!</p>
+                    </div>
+                </div>
+
+                <!-- card3  -->
+                <div class="card bg-[#EFEBE3] max-w-[420px]">
+                    <div class="pt-10">
+                        <figure class="px-10 h-[150px] w-[150px] bg-white rounded-full mx-auto">
+                            <img src="./images/healthy.png" alt="Healthy Products " />
+                        </figure>
+                    </div>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-semibold text-2xl mb-2 text-black">Healthy Products </h2>
+                        <p class="text-[#111111] font-light mb-3">Nourish your body with our healthy meal options, crafted to deliver delicious, nutritious food for a balanced lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
 
     </main>
 
