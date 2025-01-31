@@ -48,9 +48,9 @@
             <div class="navbar pb-6 md:pb-3 border-b border-[#179800] md:border-0 justify-between items-center">
                 <!-- nav right side -->
                 <div class="navbar-start">
-                    <a class="btn-ghost text-xl hidden lg:block"><img class="w-full" src="./images/logo-header.png"
+                    <a class="btn-ghost text-xl hidden lg:block"><img class="w-full animate-pulse" src="./images/logo-header.png"
                             alt=""></a>
-                    <a class="lg:hidden"> <img src="./images/sm-bg.png" alt=""></a>
+                    <a class="lg:hidden animate-pulse"> <img src="./images/sm-bg.png" alt=""></a>
                 </div>
                 <!-- nav middle -->
                 <div class="navbar-center hidden lg:flex">
@@ -118,7 +118,7 @@
     <main class="md:container mx-auto">
 
         <!-- service section  -->
-        <section class="mb-10 md:mb-32 max-w-[1320px] mx-auto px-2">
+        <section class="mb-10 md:mb-20 max-w-[1320px] mx-auto px-2">
             <h1 class="text-[#179800] text-3xl font-semibold mb-10">Services</h1>
 
             <!-- card container  -->
@@ -172,7 +172,7 @@
         </section>
 
         <!-- popular section  -->
-        <section class="mb-10 md:mb-28 bg-[#EFEBE3]">
+        <section class="mb-10 md:mb-20 bg-[#EFEBE3]">
             <div class="max-w-[1320px] mx-auto px-5 py-10 md:py-20">
                 <h1 class="text-[#179800] text-3xl font-semibold mb-10">Popular Products
                 </h1>
@@ -320,8 +320,100 @@
 
         </section>
 
+        <!-- customer rating section challenge part  -->
+        <section class="max-w-[1320px] mx-auto mb-10 md:mb-20">
+            <h1 class="text-[#179800] text-center lg:text-justify text-3xl font-semibold mb-10">What Our Client Say</h1>
+            <div class="carousel w-full">
+                <!-- 1st slide -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div
+                        class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] flex flex-col justify-center items-center lg:h-[600px] md:container mx-auto p-5 md:p-16 lg:p-0 rounded-lg">
+                        <div>
+                            <div class="avatar mb-7">
+                                <div class="w-24 rounded-full ring ring-offset-2 ring-[#179800] bg-cover">
+                                    <img class="w-full" src="./images/doctor.jpeg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center text-center text-slate-200">
+                            <h1 class="text-gray-800 text-2xl font-extrabold">Mohammad Rahman</h1>
+                            <p class="font-poppins text-xl font-semibold text-slate-800 mb-3">Doctor</p>
+                            <p class="font-poppins text-sm text-gray-500 mb-4">As a doctor, I highly recommend this
+                                grocery shop for its excellent selection of fresh, organic produce, whole grains, and
+                                lean proteins. <br> Their commitment to offering nutritious, minimally processed foods
+                                supports a healthy lifestyle.With clear labeling and diverse options, it’s a great place
+                                to find <br> ingredients that promote overall well-being.</p>
+                        </div>
+                        <div class="text-center"><img src="./images/quote.png" alt=""></div>
+                    </div>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle bg-transparent">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-transparent">❯</a>
+                    </div>
+                </div>
+                <!-- 1st slide end -->
+                <!-- 2nd slide -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div
+                        class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] flex flex-col justify-center items-center lg:h-[600px] md:container mx-auto p-5 md:p-16 lg:p-0 rounded-lg">
+                        <div>
+                            <div class="avatar mb-7">
+                                <div class="w-24 rounded-full ring ring-offset-2 ring-[#179800] bg-cover">
+                                    <img class="w-full" src="./images/customer.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center text-center text-slate-200">
+                            <h1 class="text-gray-800 text-2xl font-extrabold">Mizanur Rahman</h1>
+                            <p class="font-poppins text-xl font-semibold text-slate-800 mb-3">Businessmen</p>
+                            <p class="font-poppins text-sm text-gray-500 mb-4">As a regular customer of their shop, I
+                                highly recommend this
+                                grocery shop for its excellent selection of fresh, organic produce, whole grains, and
+                                lean proteins. <br> Their commitment to offering nutritious, minimally processed foods
+                                supports a healthy lifestyle.With clear labeling and diverse options, it’s a great place
+                                to find <br> ingredients that promote overall well-being.</p>
+                        </div>
+                        <div class="text-center"><img src="./images/quote.png" alt=""></div>
+                    </div>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle bg-transparent">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-transparent">❯</a>
+                    </div>
+                </div>
+                <!-- 2nd slide end -->
+                <!--  3rd slide -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div
+                        class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] flex flex-col justify-center items-center lg:h-[600px] md:container mx-auto p-5 md:p-16 lg:p-0 rounded-lg">
+                        <div>
+                            <div class="avatar mb-7">
+                                <div class="w-24 rounded-full ring ring-offset-2 ring-[#179800] bg-cover">
+                                    <img class="w-full" src="./images/doctor2.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-center text-center text-slate-200">
+                            <h1 class="text-gray-800 text-2xl font-extrabold">Marzanur Rahman</h1>
+                            <p class="font-poppins text-xl font-semibold text-slate-800 mb-3">Doctor</p>
+                            <p class="font-poppins text-sm text-gray-500 mb-4">As a doctor, I highly recommend this
+                                grocery shop for its excellent selection of fresh, organic produce, whole grains, and
+                                lean proteins. <br> Their commitment to offering nutritious, minimally processed foods
+                                supports a healthy lifestyle.With clear labeling and diverse options, it’s a great place
+                                to find <br> ingredients that promote overall well-being.</p>
+                        </div>
+                        <div class="text-center"><img src="./images/quote.png" alt=""></div>
+                    </div>
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle bg-transparent">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-transparent">❯</a>
+                    </div>
+                </div>
+                <!-- 3rd slide end -->
+            </div>
+        </section>
+
         <!-- arrival section  -->
-        <section class="mb-10 md:mb-28 max-w-[1320px] mx-auto px-2 ">
+        <section class=" max-w-[1320px] mx-auto px-2 ">
             <h1 class="text-[#179800] text-3xl font-semibold mb-10">Arrival & Offers</h1>
             <div class="font-poppins flex flex-col lg:flex-row gap-3 ">
                 <div
@@ -353,108 +445,13 @@
             </div>
         </section>
 
-
-        <!-- customer rating section challenge part  -->
-        <section class="max-w-[1320px] mx-auto">
-            <h1 class="text-[#179800] text-center lg:text-justify text-3xl font-semibold mb-10">What Our Client Say</h1>
-            <div class="carousel w-full">
-                <!-- 1st slide -->
-                <div id="slide1" class="carousel-item relative w-full">
-                    <div
-                        class="bg-gradient-to-b from-[#4e88562c] to-[#83af512d] flex flex-col justify-center items-center lg:h-[600px] md:container mx-auto p-5 md:p-16 lg:p-0 rounded-md">
-                        <div>
-                            <div class="avatar mb-7">
-                                <div class="w-24 rounded-full ring ring-offset-2 ring-[#179800] bg-cover">
-                                    <img class="w-full" src="./images/doctor.jpeg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col items-center justify-center text-center text-slate-200">
-                            <h1 class="text-gray-800 text-2xl font-extrabold">Mohammad Rahman</h1>
-                            <p class="font-poppins text-xl font-semibold text-slate-800 mb-3">Doctor</p>
-                            <p class="font-poppins text-sm text-gray-500 mb-4">As a doctor, I highly recommend this
-                                grocery shop for its excellent selection of fresh, organic produce, whole grains, and
-                                lean proteins. <br> Their commitment to offering nutritious, minimally processed foods
-                                supports a healthy lifestyle.With clear labeling and diverse options, it’s a great place
-                                to find <br> ingredients that promote overall well-being.</p>
-                        </div>
-                        <div class="text-center"><img src="./images/quote.png" alt=""></div>
-                    </div>
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide3" class="btn btn-circle bg-transparent">❮</a>
-                        <a href="#slide2" class="btn btn-circle bg-transparent">❯</a>
-                    </div>
-                </div>
-                <!-- 1st slide end -->
-                <!-- 2nd slide -->
-                <div id="slide2" class="carousel-item relative w-full">
-                    <div
-                        class="bg-gradient-to-b from-[#4e88562c] to-[#83af512d] flex flex-col justify-center items-center lg:h-[600px] md:container mx-auto p-5 md:p-16 lg:p-0 rounded-md">
-                        <div>
-                            <div class="avatar mb-7">
-                                <div class="w-24 rounded-full ring ring-offset-2 ring-[#179800] bg-cover">
-                                    <img class="w-full" src="./images/customer.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col items-center justify-center text-center text-slate-200">
-                            <h1 class="text-gray-800 text-2xl font-extrabold">Mizanur Rahman</h1>
-                            <p class="font-poppins text-xl font-semibold text-slate-800 mb-3">Businessmen</p>
-                            <p class="font-poppins text-sm text-gray-500 mb-4">As a regular customer of their shop, I
-                                highly recommend this
-                                grocery shop for its excellent selection of fresh, organic produce, whole grains, and
-                                lean proteins. <br> Their commitment to offering nutritious, minimally processed foods
-                                supports a healthy lifestyle.With clear labeling and diverse options, it’s a great place
-                                to find <br> ingredients that promote overall well-being.</p>
-                        </div>
-                        <div class="text-center"><img src="./images/quote.png" alt=""></div>
-                    </div>
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide1" class="btn btn-circle bg-transparent">❮</a>
-                        <a href="#slide3" class="btn btn-circle bg-transparent">❯</a>
-                    </div>
-                </div>
-                <!-- 2nd slide end -->
-                <!--  3rd slide -->
-                <div id="slide3" class="carousel-item relative w-full">
-                    <div
-                        class="bg-gradient-to-b from-[#4e88562c] to-[#83af512d] flex flex-col justify-center items-center lg:h-[600px] md:container mx-auto p-5 md:p-16 lg:p-0 rounded-md">
-                        <div>
-                            <div class="avatar mb-7">
-                                <div class="w-24 rounded-full ring ring-offset-2 ring-[#179800] bg-cover">
-                                    <img class="w-full" src="./images/doctor2.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col items-center justify-center text-center text-slate-200">
-                            <h1 class="text-gray-800 text-2xl font-extrabold">Marzanur Rahman</h1>
-                            <p class="font-poppins text-xl font-semibold text-slate-800 mb-3">Doctor</p>
-                            <p class="font-poppins text-sm text-gray-500 mb-4">As a doctor, I highly recommend this
-                                grocery shop for its excellent selection of fresh, organic produce, whole grains, and
-                                lean proteins. <br> Their commitment to offering nutritious, minimally processed foods
-                                supports a healthy lifestyle.With clear labeling and diverse options, it’s a great place
-                                to find <br> ingredients that promote overall well-being.</p>
-                        </div>
-                        <div class="text-center"><img src="./images/quote.png" alt=""></div>
-                    </div>
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide2" class="btn btn-circle bg-transparent">❮</a>
-                        <a href="#slide1" class="btn btn-circle bg-transparent">❯</a>
-                    </div>
-                </div>
-                <!-- 3rd slide end -->
-            </div>
-        </section>
     </main>
 
-
     <!-- footer section  -->
-    <section class="mb-5 relative">
-
         <footer>
             <!-- top footer card  -->
             <div
-                class="card px-12 translate-y-[50%] mx-10 md:mx-20 max-w-[1320px] lg:mx-auto card-side py-3 md:py-10 flex flex-col text-center lg:text-justify lg:flex-row justify-around items-center bg-[#EFEBE3] ">
+                class="card px-12 relative top-40 mx-10 md:mx-20 max-w-[1320px] lg:mx-auto card-side py-3 md:py-10 flex flex-col text-center lg:text-justify lg:flex-row justify-around items-center bg-[#EFEBE3] ">
                 <figure>
                     <img src="./images/vegetable-busket.png" alt="vegetable" />
                 </figure>
@@ -470,7 +467,7 @@
             </div>
 
             <div class="bg-[#179800]">
-            <div class="max-w-[1320px] pt-80 mx-auto justify-between footer text-base-content p-10">
+            <div class="max-w-[1320px] pt-56 lg:pt-80 mx-auto justify-between footer text-base-content p-8 pb-10 ">
                 <nav>
                     <img src="./images/logo-footer.png" alt="">
                     <p class="text-sm font-light text-white">Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends</p>
@@ -499,11 +496,7 @@
                 </nav>
             </div>
         </div>
-
         </footer>
-
-    </section>
-
 
 </body>
 
